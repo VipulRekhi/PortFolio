@@ -105,7 +105,6 @@ export default function Hero() {
           <video
             ref={videoRef}
             src="/hero-video.mp4"
-            poster="/portrait-fallback.webp"
             muted
             playsInline
             webkit-playsinline="true"
