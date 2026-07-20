@@ -33,13 +33,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ── Safe-area inset for notched phones ─────────────────── */
+/* ── Safe-area inset for notched phones ──────────────────── */
 .safe-top {
   padding-top: env(safe-area-inset-top);
-}
-
-.safe-bottom {
-  padding-bottom: env(safe-area-inset-bottom);
 }
 
 /* ── Custom scrollbar ───────────────────────────────────── */
@@ -102,26 +98,6 @@ body {
     0 12px 40px rgba(0, 0, 0, 0.7),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
-}
-
-/* ── Skeleton shimmer animation ─────────────────────────── */
-@keyframes shimmer {
-  0% {
-    background-position: -400px 0;
-  }
-
-  100% {
-    background-position: 400px 0;
-  }
-}
-
-.skeleton-shimmer {
-  background: linear-gradient(90deg,
-      rgba(255, 255, 255, 0.03) 0%,
-      rgba(255, 255, 255, 0.07) 50%,
-      rgba(255, 255, 255, 0.03) 100%);
-  background-size: 800px 100%;
-  animation: shimmer 1.8s ease-in-out infinite;
 }
 
 /* ── Tracking utilities ──────────────────────────────────── */

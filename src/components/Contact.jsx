@@ -5,8 +5,6 @@ import { glass } from './LiquidGlass';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-gsap.registerPlugin(ScrollTrigger);
-
 // ── Formspree endpoint — already configured ✅ ─────────────────────────────
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/maqrnqjo';
 // True when the endpoint is a real Formspree URL (not the placeholder)

@@ -1,25 +1,5 @@
 /**
  * Hero — full-bleed video background + Framer Motion reveal engine.
- *
- * Layout change (user request):
- *   - <video> fills the ENTIRE section as an absolute background (object-cover)
- *   - Dark gradient overlay sits between video and text for legibility
- *   - Text content (stat cards, headline, tagline, scroll CTA) overlays on top
- *   - Rotated edge labels sit at the outer edges as before
- *
- * Spec §4 motion rules unchanged:
- *   - video plays once, freezes on last frame (no loop)
- *   - 4s fallback timeout if video never fires onEnded
- *   - prefers-reduced-motion: static portrait-fallback.webp as background, immediate reveal
- *   - Left column fully hidden until videoEnded === true (no partial flash)
- *   - Reveal sequence via Framer Motion variants:
- *       1. Stat cards     → 0ms,    y 12→0, opacity, 0.5s
- *       2. Edge labels    → 150ms,  opacity only, 0.4s
- *       3. Headline       → 250ms,  clipPath wipe, 0.6s custom ease
- *       4. Tagline        → 850ms,  y 12→0, 0.5s
- *       5. Scroll CTA     → 1450ms, then infinite arrow bounce
- *
- * STRICT EXCLUSIONS: NO GSAP, NO ScrollTrigger, NO ScrollImageSequence import.
  */
 
 import { useRef, useEffect, useState } from 'react';
@@ -110,8 +90,6 @@ export default function Hero() {
             webkit-playsinline="true"
             preload="auto"
             autoPlay
-            loop={false}
-            controls={false}
             disablePictureInPicture
             onEnded={handleVideoEnded}
             className="w-full h-full object-cover max-md:object-[80%_top] md:object-top"

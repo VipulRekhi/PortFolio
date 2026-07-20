@@ -4,8 +4,6 @@ import { ArrowUpRight, Github } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-gsap.registerPlugin(ScrollTrigger);
-
 export default function ProjectReveal({ title, tech = [], liveUrl = '#', repoUrl = '#', videoSrc }) {
   const containerRef = useRef(null);
 

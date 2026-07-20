@@ -1,16 +1,6 @@
 /**
  * App — root component.
- *
- * Stack (spec §0):
- *   - React 18 + Vite
- *   - Tailwind CSS v4
- *   - GSAP + ScrollTrigger (used ONLY in ScrollImageSequence via ProjectReveal)
- *   - Framer Motion (used in Nav, Hero, About, Skills, Contact)
- *   - Three.js particle canvas (ThreeBackground — fixed, behind all content)
- *   - Noise grain overlay (fixed, above all content)
- *
  * Section order: Nav → Hero → About → Skills → Showcase → Contact
- * No Footer per spec (not listed in §1 file structure)
  */
 
 import { useEffect } from 'react';

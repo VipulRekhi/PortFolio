@@ -9,8 +9,6 @@ import {
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-gsap.registerPlugin(ScrollTrigger);
-
 const CATEGORIES = [
   {
     title: 'Frontend',
@@ -51,10 +49,6 @@ const CATEGORIES = [
 
 export default function Skills() {
   const sectionRef = useRef(null);
-
-
-
-
 
   useEffect(() => {
     const ctx = gsap.context(() => {

@@ -5,8 +5,6 @@ import { glass } from './LiquidGlass';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-gsap.registerPlugin(ScrollTrigger);
-
 const EXPLORING = ['Java', 'Spring Boot', 'REST APIs', 'JDBC', 'Backend Development'];
 
 export default function About() {
