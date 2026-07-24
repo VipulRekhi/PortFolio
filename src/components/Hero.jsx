@@ -10,17 +10,17 @@ import { glass } from './LiquidGlass';
 // ── Framer Motion variants ────────────────────────────────────────────────────
 
 const statVariants = {
-  hidden:  { opacity: 0, y: 12 },
+  hidden: { opacity: 0, y: 12 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut', delay: 2.0 } },
 };
 
 const labelVariants = {
-  hidden:  { opacity: 0 },
+  hidden: { opacity: 0 },
   visible: { opacity: 1, transition: { duration: 0.4, ease: 'easeOut', delay: 2.15 } },
 };
 
 const headlineVariants = {
-  hidden:  { clipPath: 'inset(0 100% 0 0)', opacity: 1 },
+  hidden: { clipPath: 'inset(0 100% 0 0)', opacity: 1 },
   visible: {
     clipPath: 'inset(0 0% 0 0)',
     opacity: 1,
@@ -29,21 +29,21 @@ const headlineVariants = {
 };
 
 const taglineVariants = {
-  hidden:  { opacity: 0, y: 12 },
+  hidden: { opacity: 0, y: 12 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut', delay: 2.85 } },
 };
 
 const scrollVariants = {
-  hidden:  { opacity: 0 },
+  hidden: { opacity: 0 },
   visible: { opacity: 1, transition: { duration: 0.4, ease: 'easeOut', delay: 3.45 } },
 };
 
 export default function Hero() {
-  const videoRef         = useRef(null);
+  const videoRef = useRef(null);
   const fallbackTimerRef = useRef(null);
 
   const [videoEnded, setVideoEnded] = useState(false);
-  const [reducedMotion]             = useState(
+  const [reducedMotion] = useState(
     () => typeof window !== 'undefined'
       ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
       : false
@@ -215,7 +215,7 @@ export default function Hero() {
             }}
           >
             <FileText className="w-4 h-4" />
-            <span>Checkout Resume</span>
+            <a href="https://drive.google.com/file/d/1TC2elDoT-R8FWLys9zdy4V_jZQg_2cZy/view?usp=sharing">Checkout Resume</a>
           </motion.a>
 
           {/* Step 6 — Scroll CTA */}
