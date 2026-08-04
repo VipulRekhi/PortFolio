@@ -215,7 +215,7 @@ export default function Hero() {
             }}
           >
             <FileText className="w-4 h-4" />
-            <a href="https://drive.google.com/file/d/1tl49sgvnB4c4eYSniNNYBkeJEOpbV22W/view?usp=sharing">Checkout Resume</a>
+            <a href="https://drive.google.com/file/d/11N2DKON8gxYiGo4M_pjS-M-pnwS36GsW/view?usp=sharing">Checkout Resume</a>
           </motion.a>
 
           {/* Step 6 — Scroll CTA */}
